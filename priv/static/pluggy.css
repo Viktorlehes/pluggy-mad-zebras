@@ -110,21 +110,8 @@ body {
 	background-color: #4aac42;
 }
 
-.kundvagn-meny-button {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: 15px;
-	left: 20px;
-	width: 90px;
-	height: 35px;
-	border-radius: 12px;
-	border: 2px solid rgba(3, 94, 15, 0.133);
-	background-color:#6BFF5F ;
-	font-size: 18px;
-	font-weight: 500;
-}
+
+/* Kundvagn */
 
 .kundvagn-header{
 	font-size: 50px;
@@ -218,4 +205,22 @@ body {
 
 .ingredients {
 	list-style-type:disc;
+}
+
+.kundvagn-meny-button {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 15px;
+	left: 20px;
+	width: 90px;
+	height: 35px;
+	border-radius: 12px;
+	border: 2px solid rgba(3, 94, 15, 0.133);
+	background-color:#6BFF5F ;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	color: black;
 }

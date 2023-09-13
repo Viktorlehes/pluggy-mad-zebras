@@ -1,4 +1,5 @@
-<div class="kundvagn-meny-button"><p>Meny</p></div>
+<a href="/meny" class="btn-link kundvagn-meny-button">Meny</a>
+
 <div class="kundvagn-wrapper">
   <nav class="kundvagn-nav">
     <header class="kundvagn-header">Kundvagn</header>
