@@ -37,7 +37,7 @@ body {
 }
 
 #basket {
-	background-image: url("/uploads/meny/tonys-pizza-basket.svg");
+	background-image: url("images/tonys-pizza-basket.svg");
 	display: block;
 	width: 15vh;
 	height: 15vh;

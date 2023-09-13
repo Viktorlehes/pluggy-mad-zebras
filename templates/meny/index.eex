@@ -1,12 +1,12 @@
 <div id="container">
     <nav id="nav">
-        <img src="/uploads/meny/tonys-pizza-logo.svg" alt="" id="logo">
+        <img src="images/tonys-pizza-logo.svg" alt="" id="logo">
         <a href="/kundvagn" id="basket"></a>
     </nav>
     <main id="menu">
 
         <div class="pizzaDiv">
-            <img src="/uploads/meny/margherita.svg" alt="" class="pizzaSvg">
+            <img src="images/margherita.svg" alt="" class="pizzaSvg">
             <section class="pizzaSection">
                 <h3 class="pizzaTitle">Margherita</h3>
                 <p class="pizzaIngridient">Tomtats&#229s</p>
@@ -20,7 +20,7 @@
         </div>
 
         <div class="pizzaDiv">
-            <img src="/uploads/meny/capricciosa.svg" alt="" class="pizzaSvg">
+            <img src="images/capricciosa.svg" alt="" class="pizzaSvg">
             <section class="pizzaSection">
                 <h3 class="pizzaTitle">Capricciosa</h3>
                 <p class="pizzaIngridient">Tomtats&#229s</p>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="pizzaDiv">
-            <img src="/uploads/meny/marinara.svg" alt="" class="pizzaSvg">
+            <img src="images/marinara.svg" alt="" class="pizzaSvg">
             <section class="pizzaSection">
                 <h3 class="pizzaTitle">Marinara</h3>
                 <p class="pizzaIngridient">Tomtats&#229s</p>
@@ -48,7 +48,7 @@
         </div>
 
         <div class="pizzaDiv">
-            <img src="/uploads/meny/quattro-formaggi.svg" alt="" class="pizzaSvg">
+            <img src="images/quattro-formaggi.svg" alt="" class="pizzaSvg">
             <section class="pizzaSection">
                 <h3 class="pizzaTitle">Quattro formaggi</h3>
                 <p class="pizzaIngridient">Tomtats&#229s</p>
@@ -64,7 +64,7 @@
         </div>
 
         <div class="pizzaDiv">
-            <img src="/uploads/meny/prosciutto-e-funghi.svg" alt="" class="pizzaSvg">
+            <img src="images/prosciutto-e-funghi.svg" alt="" class="pizzaSvg">
             <section class="pizzaSection">
                 <h3 class="pizzaTitle">Prosciutto e funghi</h3>
                 <p class="pizzaIngridient">Tomtats&#229s</p>
@@ -79,7 +79,7 @@
         </div>
 
         <div class="pizzaDiv">
-            <img src="/uploads/meny/ortolana.svg" alt="" class="pizzaSvg">
+            <img src="images/ortolana.svg" alt="" class="pizzaSvg">
             <section class="pizzaSection">
                 <h3 class="pizzaTitle">Ortolana</h3>
                 <p class="pizzaIngridient">Tomtats&#229s</p>
@@ -95,7 +95,7 @@
         </div>
 
         <div class="pizzaDiv">
-            <img src="/uploads/meny/quattro-stagioni.svg" alt="" class="pizzaSvg">
+            <img src="images/quattro-stagioni.svg" alt="" class="pizzaSvg">
             <section class="pizzaSection">
                 <h3 class="pizzaTitle">Quattro stagioni</h3>
                 <p class="pizzaIngridient">Tomtats&#229s</p>
@@ -112,7 +112,7 @@
         </div>
 
         <div class="pizzaDiv">
-            <img src="/uploads/meny/diavola.svg" alt="" class="pizzaSvg">
+            <img src="images/diavola.svg" alt="" class="pizzaSvg">
             <section class="pizzaSection">
                 <h3 class="pizzaTitle">Diavola</h3>
                 <p class="pizzaIngridient">Tomtats&#229s</p>
