@@ -1,3 +1,101 @@
 body {
-	background-color: peachpuff;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MENY */
+
+#container {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 30% auto;
+	grid-template-areas: 
+	"nav"
+	"menu";
+}
+
+/* MENY NAV */
+
+#nav {
+	grid-area: nav;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#logo {
+	height: 90%;
+}
+
+#basket {
+	height: 60%;
+}
+
+/* MENY MAIN */
+
+#menu {
+	grid-area: menu;
+	display: grid;
+	padding: 1rem 15% 1rem 0;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: auto;
+	
+}
+
+.pizzaDiv {
+	justify-self: center;
+	height: min-content;
+	width: 70%;
+	margin: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.pizzaSvg {
+	width: 50%;
+}
+
+.pizzaSection {
+	padding: 1rem;
+}
+
+.pizzaTitle {
+	margin: 0 0 8px 0;
+	font-size: 2.5vh;
+}
+
+.pizzaIngridient {
+	margin: 4px 0 0 0;
+	font-size: 2vh;
+}
+
+.buttonDiv {
+	padding-top: 0.5rem;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 100%;
+	display: flex;
+}
+
+.button {
+	margin-right: 1rem;
+	font-size: 2vh;
+	text-decoration: none;
+	padding: 6px 10px 6px 10px;
+	border-radius: 0.3rem;
+}
+
+.button:visited {
+	color: black;
+}
+
+.customize {
+	background-color: #ffecc3;
+}
+
+.buy {
+	background-color: #4aac42;
 }

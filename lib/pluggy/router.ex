@@ -5,6 +5,7 @@ defmodule Pluggy.Router do
 
   alias Pluggy.FruitController
   alias Pluggy.UserController
+  alias Pluggy.MenyController
 
 
 
@@ -41,6 +42,8 @@ defmodule Pluggy.Router do
 
   post("/users/login", do: UserController.login(conn, conn.body_params))
   post("/users/logout", do: UserController.logout(conn))
+
+  get("/meny", do: MenyController.index(conn))
 
   match _ do
     send_resp(conn, 404, "oops")
