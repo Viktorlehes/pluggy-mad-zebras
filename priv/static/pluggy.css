@@ -1,7 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 body {
-	background-color: #FFFF;
 	margin: 0;
+	font-family: "Inter", sans-serif;
+	padding: 0;
+	margin-top: 30px;
+	font-weight: 400;
+	font-family: "Inter", sans-serif;
 }
+
+/* MENY */
+
+#container {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 30% auto;
+	grid-template-areas: 
+	"nav"
+	"menu";
+}
+
+/* MENY NAV */
+
+#nav {
+	grid-area: nav;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#logo {
+	height: 90%;
+}
+
+#basket {
+	background-image: url("/uploads/meny/tonys-pizza-basket.svg");
+	display: block;
+	width: 15vh;
+	height: 15vh;
+}
+
+/* MENY MAIN */
+
+#menu {
+	grid-area: menu;
+	display: grid;
+	padding: 1rem 15% 1rem 0;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: auto;
+	
+}
+
+.pizzaDiv {
+	justify-self: center;
+	height: min-content;
+	width: 70%;
+	margin: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.pizzaSvg {
+	width: 50%;
+}
+
+.pizzaSection {
+	padding: 1rem;
+}
+
+.pizzaTitle {
+	margin: 0 0 8px 0;
+	font-size: 2.5vh;
+}
+
+.pizzaIngridient {
+	margin: 4px 0 0 0;
+	font-size: 2vh;
+}
+
+.buttonDiv {
+	padding-top: 0.5rem;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 100%;
+	display: flex;
+}
+
+.button {
+	margin-right: 1rem;
+	font-size: 2vh;
+	text-decoration: none;
+	padding: 6px 10px 6px 10px;
+	border-radius: 0.3rem;
+}
+
+.button:visited {
+	color: black;
+}
+
+.customize {
+	background-color: #ffecc3;
+}
+
+.buy {
+	background-color: #4aac42;
+}
+
+
+/* Kundvagn */
+
+.kundvagn-header{
+	font-size: 50px;
+	font-weight:500;
+}
+
+.kundvagn-wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.kundvagn-main-container{
+	margin-top: 3vh;
+	display: grid;
+	grid-template-columns:repeat(2, 50%);
+	grid-gap:80px
+}
+
+.kundvagn-form-main{
+	display: flex;
+	padding: 15px;
+	width: 250px;
+	height: 300px;
+	background-color: #FFE9BB;
+	border-radius: 20px;
+	align-self: center;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.kundvagn-form-main form input {
+	border: 1px solid rgba(0, 0, 0, 0.33);
+	height: 30px;
+	border-radius: 20px;
+	padding: 12px 20px;
+	
+	box-sizing: border-box;
+}
+
+.kundvagn-pizza {
+	display: flex;
+	flex-direction: row;
+	border: 2px solid #9e8c647e  ;
+	border-radius: 15px;
+	padding: 5px;
+	padding-right: 15px;
+	margin-bottom: 15px;
+	min-width: 360px;
+}
+
+.pizza-button-wrapper{
+	margin-left: 30px;
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-gap: 10px;
+	align-items: end;
+}
+
+.pizza-button-wrapper button {
+	width: 70px;
+	height: 30px;
+	border-radius: 12px;
+	border: none;
+	margin-bottom: 12px;
+}
+
+.submit-order-button{
+	width: 90px;
+	height: 35px;
+	border-radius: 12px;
+	border: 2px solid rgba(3, 94, 15, 0.133);
+	background-color:#6BFF5F ;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.button-anpassa {
+	background-color: #FFE9BB ;
+}
+
+.button-tabort { 
+	background-color: #FD6666 ;
+}
+
+.pizza-name{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.ingredients {
+	list-style-type:disc;
+}
+
+.kundvagn-meny-button {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 15px;
+	left: 20px;
+	width: 90px;
+	height: 35px;
+	border-radius: 12px;
+	border: 2px solid rgba(3, 94, 15, 0.133);
+	background-color:#6BFF5F ;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	color: black;
+}
+
+/* KOK */
 
 #bra_grid {
 	display: grid;
@@ -12,14 +237,13 @@ body {
 }
 
 .bra_container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	width: 100%;
 	height: auto; /* Allow container to expand with content */
 	background-color: #FFF;
 	grid-area: kok_main;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #kok_nav {
@@ -30,9 +254,10 @@ body {
 
 .bra_order {
 	background-color: #ffecc4;
+	margin: 2rem;
 	display: flex;
 	flex-direction: column;
-	border: 2px solid #9e8c647e  ;
+	border: 2px solid #9e8c647e;
 	border-radius: 15px;
 	padding: 5px;
 	padding-right: 15px;

@@ -1,0 +1,72 @@
+<a href="/meny" class="btn-link kundvagn-meny-button">Meny</a>
+
+<div class="kundvagn-wrapper">
+  <nav class="kundvagn-nav">
+    <header class="kundvagn-header">Kundvagn</header>
+  </nav>
+  <div class="kundvagn-main-container">
+    <section class="kundvagn-all-pizza-wrapper">
+      <ul>
+        <li class="kundvagn-pizza">
+          <div>
+            <h1 class="pizza-name">Margherita</h1>
+            <ul class="ingredients">
+              <li>Tomato sauce</li>
+              <li>Mozzarella cheese</li>
+              <li>Fresh basil</li>
+              <li>Extra virgin olive oil</li>
+            </ul>
+          </div>
+          <div class="pizza-button-wrapper">
+            <button class="button-anpassa" type="submit"> Anpassa</button>
+            <button class="button-tabort" type="submit"> Ta Bort</button>
+          </div>
+        </li>
+        <li class="kundvagn-pizza">
+          <div>
+          <h1 class="pizza-name">Pepperoni</h1>
+            <ul class="ingredients">
+              <li>Tomato sauce</li>
+              <li>Mozzarella cheese</li>
+              <li>Pepperoni slices</li>
+            </ul>
+          </div>
+          <div class="pizza-button-wrapper">
+            <button class="button-anpassa" type="submit"> Anpassa</button>
+            <button class="button-tabort" type="submit"> Ta Bort</button>
+          </div>
+        </li>
+        <li class="kundvagn-pizza">
+          <div>
+          <h1 class="pizza-name">Veggie Supreme</h1>
+            <ul class="ingredients">
+              <li>Tomato sauce</li>
+              <li>Mozzarella cheese</li>
+              <li>Green bell peppers</li>
+              <li>Red onions</li>
+              <li>Mushrooms</li>
+              <li>Black olives</li>
+            </ul>
+          </div>
+          <div class="pizza-button-wrapper">
+            <button class="button-anpassa" type="submit"> Anpassa</button>
+            <button class="button-tabort" type="submit"> Ta Bort</button>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+    <section class="kundvagn-form-main">
+      <form action="/kungvagn/submit" method="post">
+        <p>Namn:</p>
+        <input type="text" id="namn" name="namn" required>
+        <br>
+        <br>
+        <p>Telefon:</p>
+        <input type="tel" id="telefon" name="telefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <br>
+        <br>
+        <button class="submit-order-button" type="submit">Skicka</button>
+      </form>
+    </section>
+  </div>

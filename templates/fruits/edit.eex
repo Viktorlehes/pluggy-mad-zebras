@@ -2,6 +2,6 @@
 
 <form action="/fruits/<%= fruit.id %>/edit" method="post">
 	<input type="text" name="name" value="<%= fruit.name %>">
-	<input type="text" name="tastiness" value="<%= fruit.tastiness %>" /> 
+	<input type="text" name="tastiness" value="<%= fruit.tastiness %>" />
 	<button type=submit>Update</button>
 </form>
