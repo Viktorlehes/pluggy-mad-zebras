@@ -1,0 +1,26 @@
+<div id="bra_grid">
+    <div id="kok_nav">
+        <img src="uploads/tonys-pizza-logo.svg" alt="Tony's Pizza" class="bra_bild">
+    </div>
+    <div class="bra_container">
+
+        <div class="bra_order">
+            <h1 class="bra_title">Beställning</h1>
+            <p class="bra_text">Line 2</p>
+                <form class="bra_form">
+                <input type="submit" value="Klar" class="bra_input">
+                </form>
+        </div>
+
+        <div class="bra_order">
+            <div class="bra_text">
+                <h1 class="bra_title">Beställning</h1>
+                <p class="bra_text">Line 2</p>
+            </div>
+                <form class="bra_form">
+                <input type="submit" value="Klar" class="bra_input">
+                </form>
+        </div>
+
+    </div>
+</div>
