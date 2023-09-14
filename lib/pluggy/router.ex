@@ -4,6 +4,7 @@ defmodule Pluggy.Router do
 
   alias Pluggy.FruitController
   alias Pluggy.UserController
+  alias Pluggy.KokController
   alias Pluggy.MenyController
   alias Pluggy.KundvagnController
 
@@ -30,6 +31,7 @@ defmodule Pluggy.Router do
   get("/fruits/new", do: FruitController.new(conn))
   get("/fruits/:id", do: FruitController.show(conn, id))
   get("/fruits/:id/edit", do: FruitController.edit(conn, id))
+  get("/kok", do: KokController.index(conn))
 
   post("/fruits", do: FruitController.create(conn, conn.body_params))
 

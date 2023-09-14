@@ -37,7 +37,7 @@ body {
 }
 
 #basket {
-	background-image: url("/uploads/meny/tonys-pizza-basket.svg");
+	background-image: url("images/tonys-pizza-basket.svg");
 	display: block;
 	width: 15vh;
 	height: 15vh;
@@ -125,6 +125,7 @@ body {
 	align-items: center;
 }
 
+
 .kundvagn-main-container{
 	margin-top: 3vh;
 	display: grid;
@@ -149,8 +150,8 @@ body {
 	height: 30px;
 	border-radius: 20px;
 	padding: 12px 20px;
-  	
-  	box-sizing: border-box;
+	
+	box-sizing: border-box;
 }
 
 .kundvagn-pizza {
@@ -223,4 +224,77 @@ body {
 	font-weight: 500;
 	text-decoration: none;
 	color: black;
+}
+
+/* KOK */
+
+#bra_grid {
+	display: grid;
+	grid-template-rows: 15vh auto;
+	grid-template-areas: 
+	"kok_nav"
+	"kok_main";
+}
+
+.bra_container {
+	width: 100%;
+	height: auto; /* Allow container to expand with content */
+	background-color: #FFF;
+	grid-area: kok_main;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#kok_nav {
+	grid-area: kok_nav;
+	display: flex;
+	flex-direction: column;
+}
+
+.bra_order {
+	background-color: #ffecc4;
+	margin: 2rem;
+	display: flex;
+	flex-direction: column;
+	border: 2px solid #9e8c647e;
+	border-radius: 15px;
+	padding: 5px;
+	padding-right: 15px;
+	margin-bottom: 15px;
+	min-width: 360px;
+}
+
+/* Adjusted CSS for the <h1> element and <p> element */
+.bra_title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px; /* Add margin to separate title and text */
+}
+
+.bra_text {
+	margin-bottom: 10px; /* Add margin between title and text */
+}
+
+/* New CSS for the buttons */
+.bra_form {
+	display: flex;
+	justify-content: space-around; /* Position buttons side by side */
+}
+
+.bra_bild {
+	height: 100%;
+}
+
+.bra_input{
+	width: 100px;
+	height: 40px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.bra_text {
+	padding: 0.5rem;
 }
