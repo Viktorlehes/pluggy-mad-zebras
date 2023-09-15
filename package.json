@@ -1,0 +1,18 @@
+{
+  "name": "pluggy-mad-zebras",
+  "version": "1.0.0",
+  "description": "Eftersom Servy innehåller en del svårfixade buggar byggde jag en skelettapplikation baserat på [Plug](https://hex.pm/packages/plug) och [Cowboy](https://github.com/ninenines/cowboy). Plug & Cowboy är (som nämndes i de senare Servy-filmerna)  de ramverk som i stort sett alla Elixir-webbramverk är baserade på.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.11.3"
+  }
+}
