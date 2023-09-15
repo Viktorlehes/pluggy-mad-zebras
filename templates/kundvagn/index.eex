@@ -1,3 +1,5 @@
+<script src="/js/kundvagn.js"></script>
+
 <a href="/meny" class="btn-link kundvagn-meny-button">Meny</a>
 
 <div class="kundvagn-wrapper">
@@ -10,13 +12,21 @@
         <li class="kundvagn-pizza">
           <div>
             <h1 class="pizza-name">Margherita</h1>
+            <h3 class="order-subheading">Ingredienser</h3>
             <ul class="ingredients">
               <li>Tomato sauce</li>
               <li>Mozzarella cheese</li>
               <li>Fresh basil</li>
               <li>Extra virgin olive oil</li>
             </ul>
+            <h3 class="order-subheading">Extra</h3>
+            <ul class="ingredients">
+              <li>Glutenfritt</li>
+              <li>Familjestorlek</li>
+            </ul>
           </div>
+
+
           <div class="pizza-button-wrapper">
             <button class="button-anpassa" type="submit"> Anpassa</button>
             <button class="button-tabort" type="submit"> Ta Bort</button>

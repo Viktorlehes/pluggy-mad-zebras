@@ -4,9 +4,12 @@ defmodule Pluggy.Router do
 
   alias Pluggy.FruitController
   alias Pluggy.UserController
+
+  # Tonys pizza aliases
   alias Pluggy.KokController
   alias Pluggy.MenyController
   alias Pluggy.KundvagnController
+  alias Pluggy.AnpassaController
 
   plug(Plug.Static, at: "/", from: :pluggy)
   plug(:put_secret_key_base)
@@ -31,8 +34,6 @@ defmodule Pluggy.Router do
   get("/fruits/new", do: FruitController.new(conn))
   get("/fruits/:id", do: FruitController.show(conn, id))
   get("/fruits/:id/edit", do: FruitController.edit(conn, id))
-  get("/kok", do: KokController.index(conn))
-
   post("/fruits", do: FruitController.create(conn, conn.body_params))
 
   # should be put /fruits/:id, but put/patch/delete are not supported without hidden inputs
@@ -47,6 +48,8 @@ defmodule Pluggy.Router do
   # Tonys Pizza routes
   get("/kundvagn", do: KundvagnController.index(conn))
   get("/meny", do: MenyController.index(conn))
+  get("/kok", do: KokController.index(conn))
+  get("/anpassa/:id", do: AnpassaController.index(conn))
 
   match _ do
     send_resp(conn, 404, "oops")
