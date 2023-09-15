@@ -1,4 +1,4 @@
-<script src="/js/kundvagn.js"></script>
+<script src="/js/kundvagn.js" defer></script>
 
 <a href="/meny" class="btn-link kundvagn-meny-button">Meny</a>
 
@@ -8,7 +8,8 @@
   </nav>
   <div class="kundvagn-main-container">
     <section class="kundvagn-all-pizza-wrapper">
-      <ul>
+      <ul id="kundvagn-ul">
+        <!--
         <li class="kundvagn-pizza">
           <div>
             <h1 class="pizza-name">Margherita</h1>
@@ -26,44 +27,12 @@
             </ul>
           </div>
 
-
           <div class="pizza-button-wrapper">
             <button class="button-anpassa" type="submit"> Anpassa</button>
             <button class="button-tabort" type="submit"> Ta Bort</button>
           </div>
         </li>
-        <li class="kundvagn-pizza">
-          <div>
-          <h1 class="pizza-name">Pepperoni</h1>
-            <ul class="ingredients">
-              <li>Tomato sauce</li>
-              <li>Mozzarella cheese</li>
-              <li>Pepperoni slices</li>
-            </ul>
-          </div>
-          <div class="pizza-button-wrapper">
-            <button class="button-anpassa" type="submit"> Anpassa</button>
-            <button class="button-tabort" type="submit"> Ta Bort</button>
-          </div>
-        </li>
-        <li class="kundvagn-pizza">
-          <div>
-          <h1 class="pizza-name">Veggie Supreme</h1>
-            <ul class="ingredients">
-              <li>Tomato sauce</li>
-              <li>Mozzarella cheese</li>
-              <li>Green bell peppers</li>
-              <li>Red onions</li>
-              <li>Mushrooms</li>
-              <li>Black olives</li>
-            </ul>
-          </div>
-          <div class="pizza-button-wrapper">
-            <button class="button-anpassa" type="submit"> Anpassa</button>
-            <button class="button-tabort" type="submit"> Ta Bort</button>
-          </div>
-        </li>
-
+        -->
       </ul>
     </section>
     <section class="kundvagn-form-main">

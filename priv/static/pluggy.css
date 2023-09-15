@@ -159,8 +159,8 @@ body {
 	flex-direction: row;
 	border: 2px solid #9e8c647e  ;
 	border-radius: 15px;
-	padding: 5px;
-	padding-right: 15px;
+	padding-bottom: 1rem;
+	padding-right: 1rem;
 	margin-bottom: 15px;
 	min-width: 360px;
 }
@@ -178,7 +178,6 @@ body {
 	height: 30px;
 	border-radius: 12px;
 	border: none;
-	margin-bottom: 12px;
 }
 
 .submit-order-button{
@@ -195,13 +194,30 @@ body {
 	background-color: #FFE9BB ;
 }
 
+.button-anpassa:hover {
+	cursor: pointer;
+}
+
 .button-tabort { 
 	background-color: #FD6666 ;
 }
 
+.button-tabort:hover {
+	cursor: pointer;
+}
+
 .pizza-name{
-	font-size: 18px;
+	font-size: 1.2rem;
 	font-weight: 600;
+	margin-bottom: 0rem;
+	margin-left: 0.5rem;
+}
+
+.order-subheading {
+	font-size: 1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-left: 1rem;
 }
 
 .ingredients {
@@ -298,3 +314,6 @@ body {
 .bra_text {
 	padding: 0.5rem;
 }
+
+/* ANPASSA */
+
