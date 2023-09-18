@@ -1,16 +1,6 @@
-<script src="js/anpassa.js" defer></script>
+<script src="/js/anpassa.js" defer></script>
 
 <a href="/meny">meny</a>
 <a href="/kundvagn">kundvagn</a>
 
-<label class="anpassaLabel">
-    <input type="checkbox" name="checkbox" class="anpassaInput" checked/>
-    Tomatsas
-</label>
-
-<label class="anpassaLabel">
-    <input type="checkbox" name="checkbox-checked" class="anpassaInput"/>
-
-</label>
-
-<input type="submit" value="confirm">
+<main id="customize-container"></main>

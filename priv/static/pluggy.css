@@ -317,3 +317,13 @@ body {
 
 /* ANPASSA */
 
+#customize-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.anpassaLabel {
+	display: flex;
+	flex-direction: row;
+}
