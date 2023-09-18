@@ -1,4 +1,4 @@
-const { Pool } = require("pg");
+import { Pool } from "pg";
 
 // Create a connection pool to your PostgreSQL database
 const pool = new Pool({
@@ -26,7 +26,7 @@ async function getPizzaData() {
       const pizza = {
         name: row.name,
         ingredients: {
-          Tomatsås: row.tomatsås,
+          Tomatsas: row.tomatsas,
           Mozzarella: row.mozzarella,
           Basilika: row.basilika,
           Skinka: row.skinka,

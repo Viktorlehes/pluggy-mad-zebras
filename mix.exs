@@ -27,6 +27,7 @@ defmodule Pluggy.MixProject do
       {:plug_cowboy, "~> 2.5.2"},
       {:postgrex, "~> 0.16.4"},
       {:bcrypt_elixir, "~> 3.0.1"},
+      {:jason, "~> 1.2"}
     ]
   end
 end

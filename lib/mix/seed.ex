@@ -30,7 +30,7 @@ defmodule Mix.Tasks.Seed do
       DB,
       "CREATE TABLE pizzas (
         id SERIAL PRIMARY KEY,
-        name VARCHAR(255) NOT NULL,
+        name VARCHAR(255),
         Tomatsas BOOLEAN DEFAULT FALSE,
         Mozzarella BOOLEAN DEFAULT FALSE,
         Basilika BOOLEAN DEFAULT FALSE,

@@ -30,3 +30,5 @@ pluggy-*.tar
 /node_modules/
 
 package-lock.json
+
+mix.lock

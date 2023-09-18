@@ -1,132 +1,27 @@
+<script src="/js/meny.js" defer></script>
+
 <div id="container">
     <nav id="nav">
         <img src="images/tonys-pizza-logo.svg" alt="" id="logo">
         <a href="/kundvagn" id="basket"></a>
     </nav>
     <main id="menu">
-
-        <div class="pizzaDiv">
-            <img src="images/margherita.svg" alt="" class="pizzaSvg">
-            <section class="pizzaSection">
-                <h3 class="pizzaTitle">Margherita</h3>
-                <p class="pizzaIngridient">Tomtats&#229s</p>
-                <p class="pizzaIngridient">Mozzarella</p>
-                <p class="pizzaIngridient">Basilika</p>
-                <div class="buttonDiv">
-                    <a class="button customize" href="/meny">Anpassa</a>
-                    <a class="button buy" href="/meny">K&#246p</a>
-                </div>
-            </section>
-        </div>
-
-        <div class="pizzaDiv">
-            <img src="images/capricciosa.svg" alt="" class="pizzaSvg">
-            <section class="pizzaSection">
-                <h3 class="pizzaTitle">Capricciosa</h3>
-                <p class="pizzaIngridient">Tomtats&#229s</p>
-                <p class="pizzaIngridient">Mozzarella</p>
-                <p class="pizzaIngridient">Skinka</p>
-                <p class="pizzaIngridient">Svamp</p>
-                <p class="pizzaIngridient">Kronartskccka</p>
-                <div class="buttonDiv">
-                    <a class="button customize" href="/meny">Anpassa</a>
-                    <a class="button buy" href="/meny">K&#246p</a>
-                </div>
-            </section>
-        </div>
-
-        <div class="pizzaDiv">
-            <img src="images/marinara.svg" alt="" class="pizzaSvg">
-            <section class="pizzaSection">
-                <h3 class="pizzaTitle">Marinara</h3>
-                <p class="pizzaIngridient">Tomtats&#229s</p>
-                <div class="buttonDiv">
-                    <a class="button customize" href="/meny">Anpassa</a>
-                    <a class="button buy" href="/meny">K&#246p</a>
-                </div>
-            </section>
-        </div>
-
-        <div class="pizzaDiv">
-            <img src="images/quattro-formaggi.svg" alt="" class="pizzaSvg">
-            <section class="pizzaSection">
-                <h3 class="pizzaTitle">Quattro formaggi</h3>
-                <p class="pizzaIngridient">Tomtats&#229s</p>
-                <p class="pizzaIngridient">Mozzarella</p>
-                <p class="pizzaIngridient">Parmesan</p>
-                <p class="pizzaIngridient">Pecorino</p>
-                <p class="pizzaIngridient">Gorgonzola</p>
-                <div class="buttonDiv">
-                    <a class="button customize" href="/meny">Anpassa</a>
-                    <a class="button buy" href="/meny">K&#246p</a>
-                </div>
-            </section>
-        </div>
-
-        <div class="pizzaDiv">
-            <img src="images/prosciutto-e-funghi.svg" alt="" class="pizzaSvg">
-            <section class="pizzaSection">
-                <h3 class="pizzaTitle">Prosciutto e funghi</h3>
-                <p class="pizzaIngridient">Tomtats&#229s</p>
-                <p class="pizzaIngridient">Mozzarella</p>
-                <p class="pizzaIngridient">Skinka</p>
-                <p class="pizzaIngridient">Svamp</p>
-                <div class="buttonDiv">
-                    <a class="button customize" href="/meny">Anpassa</a>
-                    <a class="button buy" href="/meny">K&#246p</a>
-                </div>
-            </section>
-        </div>
-
-        <div class="pizzaDiv">
-            <img src="images/ortolana.svg" alt="" class="pizzaSvg">
-            <section class="pizzaSection">
-                <h3 class="pizzaTitle">Ortolana</h3>
-                <p class="pizzaIngridient">Tomtats&#229s</p>
-                <p class="pizzaIngridient">Mozzarella</p>
-                <p class="pizzaIngridient">Paprika</p>
-                <p class="pizzaIngridient">Aubergine</p>
-                <p class="pizzaIngridient">Zucchini</p>
-                <div class="buttonDiv">
-                    <a class="button customize" href="/meny">Anpassa</a>
-                    <a class="button buy" href="/meny">K&#246p</a>
-                </div>
-            </section>
-        </div>
-
-        <div class="pizzaDiv">
-            <img src="images/quattro-stagioni.svg" alt="" class="pizzaSvg">
-            <section class="pizzaSection">
-                <h3 class="pizzaTitle">Quattro stagioni</h3>
-                <p class="pizzaIngridient">Tomtats&#229s</p>
-                <p class="pizzaIngridient">Mozzarella</p>
-                <p class="pizzaIngridient">Skinka</p>
-                <p class="pizzaIngridient">Svamp</p>
-                <p class="pizzaIngridient">Kronartskocka</p>
-                <p class="pizzaIngridient">Oliver</p>
-                <div class="buttonDiv">
-                    <a class="button customize" href="/meny">Anpassa</a>
-                    <a class="button buy" href="/meny">K&#246p</a>
-                </div>
-            </section>
-        </div>
-
-        <div class="pizzaDiv">
-            <img src="images/diavola.svg" alt="" class="pizzaSvg">
-            <section class="pizzaSection">
-                <h3 class="pizzaTitle">Diavola</h3>
-                <p class="pizzaIngridient">Tomtats&#229s</p>
-                <p class="pizzaIngridient">Mozzarella</p>
-                <p class="pizzaIngridient">Salami</p>
-                <p class="pizzaIngridient">Paprika</p>
-                <p class="pizzaIngridient">Chili</p>
-                <div class="buttonDiv">
-                    <a class="button customize" href="/meny">Anpassa</a>
-                    <a class="button buy" href="/meny">K&#246p</a>
-                </div>
-            </section>
-        </div>
-
-
+        <%= for pizza <- pizzas do %>
+            <div class="pizzaDiv">
+                <img src="images/<%= pizza.name %>.svg" alt="<%= pizza.name %>" class="pizzaSvg">
+                <section class="pizzaSection">
+                    <h3 class="pizzaTitle"><%= pizza.name %></h3>
+                    <%= for {ingredient, value} <- pizza |> Map.from_struct() do %>
+                        <%= if value == true and ingredient not in [:id, :name] do %>
+                            <%= ingredient %><br>
+                        <% end %>
+                    <% end %>
+                    <div class="buttonDiv">
+                        <button class="button customize" data-pizza='<%= Jason.encode!(Map.from_struct(pizza)) %>' onclick="anpassa(this)">Anpassa</button>
+                        <button class="button buy" data-pizza='<%= Jason.encode!(Map.from_struct(pizza)) %>' onclick="laggIKundvagn(this)">K&#246p</button>
+                    </div>
+                </section>
+            </div>
+        <% end %>
     </main>
-</div>
+</div>
