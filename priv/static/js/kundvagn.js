@@ -1,5 +1,16 @@
-generateOrderHtml(getOrder())
+const order = getOrder()
 
+generateOrderHtml(order)
+addOrderInput(order)
+
+function addOrderInput(order) {
+    const orderForm = document.getElementById("order-form")    
+    const orderInput = document.createElement("input")
+    orderInput.setAttribute("type", "hidden")
+    orderInput.setAttribute("name", "order")
+    orderInput.setAttribute("value", JSON.stringify(order))
+    orderForm.appendChild(orderInput)
+}
 
 function getOrder() {
     const order = localStorage.getItem("order");
