@@ -47,6 +47,8 @@ defmodule Pluggy.Router do
 
   # Tonys Pizza routes
   get("/kundvagn", do: KundvagnController.index(conn))
+  post("/kundvagn", do: KundvagnController.create(conn, conn.body_params))
+
   get("/meny", do: MenyController.index(conn))
   get("/kok", do: KokController.index(conn))
   get("/anpassa/:id", do: AnpassaController.index(conn))

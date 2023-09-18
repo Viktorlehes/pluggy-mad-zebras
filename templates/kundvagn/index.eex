@@ -36,7 +36,7 @@
       </ul>
     </section>
     <section class="kundvagn-form-main">
-      <form action="/kungvagn/submit" method="post">
+      <form action="/kundvagn" method="post" id="order-form">
         <p>Namn:</p>
         <input type="text" id="namn" name="namn" required>
         <br>
