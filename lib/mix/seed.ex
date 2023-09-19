@@ -11,20 +11,12 @@ defmodule Mix.Tasks.Seed do
 
   defp drop_tables() do
     IO.puts("Dropping tables")
-    Postgrex.query!(DB, "DROP TABLE IF EXISTS fruits", [], pool: DBConnection.ConnectionPool)
-    Postgrex.query!(DB, "DROP TABLE IF EXISTS users", [], pool: DBConnection.ConnectionPool)
     Postgrex.query!(DB, "DROP TABLE IF EXISTS pizzas", [], pool: DBConnection.ConnectionPool)
+    Postgrex.query!(DB, "DROP TABLE IF EXISTS orders", [], pool: DBConnection.ConnectionPool)
   end
 
   defp create_tables() do
     IO.puts("Creating tables")
-
-    Postgrex.query!(
-      DB,
-      "Create TABLE fruits (id SERIAL, name VARCHAR(255) NOT NULL, tastiness INTEGER NOT NULL)",
-      [],
-      pool: DBConnection.ConnectionPool
-    )
 
     Postgrex.query!(
       DB,
@@ -46,6 +38,37 @@ defmodule Mix.Tasks.Seed do
         Salami BOOLEAN DEFAULT FALSE,
         Chili BOOLEAN DEFAULT FALSE,
         Oliver BOOLEAN DEFAULT FALSE
+      )",
+      [],
+      pool: DBConnection.ConnectionPool
+    )
+
+    Postgrex.query!(
+      DB,
+      "CREATE TABLE orders (
+        pizzaId INTEGER NOT NULL,
+        orderId INTEGER DEFAULT 1,
+        done BOOLEAN DEFAULT FALSE,
+        phone VARCHAR(255),
+        customerName VARCHAR(255),
+        pizzaName VARCHAR(255),
+        Tomatsas BOOLEAN DEFAULT FALSE,
+        Mozzarella BOOLEAN DEFAULT FALSE,
+        Basilika BOOLEAN DEFAULT FALSE,
+        Skinka BOOLEAN DEFAULT FALSE,
+        Svamp BOOLEAN DEFAULT FALSE,
+        Paprika BOOLEAN DEFAULT FALSE,
+        Aubergine BOOLEAN DEFAULT FALSE,
+        Zucchini BOOLEAN DEFAULT FALSE,
+        Kronartskocka BOOLEAN DEFAULT FALSE,
+        Parmesan BOOLEAN DEFAULT FALSE,
+        Pecorino BOOLEAN DEFAULT FALSE,
+        Gorgonzola BOOLEAN DEFAULT FALSE,
+        Salami BOOLEAN DEFAULT FALSE,
+        Chili BOOLEAN DEFAULT FALSE,
+        Oliver BOOLEAN DEFAULT FALSE,
+        family BOOLEAN DEFAULT FALSE,
+        gluten BOOLEAN DEFAULT FALSE
       )",
       [],
       pool: DBConnection.ConnectionPool
